@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Crocodile : Enemy, IShootable
@@ -39,6 +40,11 @@ public class Crocodile : Enemy, IShootable
         //timer
         WaitTime += Time.fixedDeltaTime;
         Behavior();
+    }
+
+    private void Update()
+    {
+        IsDead();
     }
 
 

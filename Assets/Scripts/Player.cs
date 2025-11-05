@@ -29,6 +29,7 @@ public class Player : Character, IShootable
     private void Update()
     {
         Shoot();
+        IsDead();
     }
     
     public void Shoot()

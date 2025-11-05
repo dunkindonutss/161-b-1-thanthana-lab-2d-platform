@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Ant : Enemy
@@ -42,5 +43,9 @@ public class Ant : Enemy
      {
      Behavior();
      }
-     
+
+     private void Update()
+     {
+         IsDead();
+     }
 }
